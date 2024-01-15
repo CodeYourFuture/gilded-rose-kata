@@ -11,10 +11,10 @@ jobs:
     runs-on: ${{ matrix.os }}-latest
     strategy:
       matrix:
-        node: [ '14.15', '16.10', '18.0', '18', '20' ]
+        node: [ '14.18', '16.10', '18.0', '18', '20' ]
         os: [ ubuntu ]
         include:
-          - node: '14.15'
+          - node: '14.18'
             os: windows
           - node: '20'
             os: windows

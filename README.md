@@ -10,7 +10,7 @@ The implementation (`src/gilded_rose.js`) is taken from her [repo] collecting st
 
 ## Installation
 
-- Ensure you have Node.js and NPM installed (Jest 29 [requires][jest-compat] Node `^14.15 || ^16.10 || >= 18`)
+- Ensure you have Node.js and NPM installed (any currently-supported LTS should be fine; Jest 29 [requires][jest-compat] Node `^14.15 || ^16.10 || >= 18`, the tests require `^14.18 || >=16`)
 - [Clone][github-clone] the repo
 - Run `npm ci` to install the dependencies (the implementation is pure JS, but the tests require [Jest])
 - Run `npm test` to check that it's all working

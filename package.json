@@ -6,7 +6,7 @@
   "description": "Gilded Rose kata in JavaScript with Jest",
   "main": "index.js",
   "engines": {
-    "node": "^14.15 || ^16.10 || >= 18"
+    "node": "^14.18 || ^16.10 || >= 18"
   },
   "scripts": {
     "start": "node ./index.js",

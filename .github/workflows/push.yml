@@ -1,0 +1,25 @@
+name: Check the test suite
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}-latest
+    strategy:
+      matrix:
+        node: [ '14.15', '16.10', '18.0', '18', '20' ]
+        os: [ ubuntu ]
+        include:
+          - node: '14.15'
+            os: windows
+          - node: '20'
+            os: windows
+    steps:
+      - uses: textbook/take-action@nodejs
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm test

@@ -4,12 +4,12 @@
   "version": "0.1.0",
   "type": "commonjs",
   "description": "Gilded Rose kata in JavaScript with Jest",
-  "main": "index.js",
+  "main": "src/gilded_rose.js",
   "engines": {
     "node": "^14.18 || ^16.10 || >= 18"
   },
   "scripts": {
-    "start": "node ./index.js",
+    "start": "node ./src/texttest_fixture.js",
     "test": "jest"
   },
   "keywords": [],
